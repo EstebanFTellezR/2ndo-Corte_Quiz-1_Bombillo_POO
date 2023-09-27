@@ -1,10 +1,23 @@
 public class Bombillo {
+  
   boolean encendido;
-  String color = azul;
+  String color = "azul";
 
-  class Bombillo(boolean encendido){
+  /**
+  * "ATRIBUTOS"
+  * Declara la variable de tipo boolean encendido y la variable de tipo String color con la palabra "Azul".
+  * @param encendido
+  * Complejidad temporal: 0(1) Tiempo Constante
+  */
+
+  public Bombillo(boolean encendido){
     this.encendido = encendido;
   }
+
+  /**
+  * "METODOS"
+  * Constructor de la clase Bombillo.
+  */
 
   void prender () {
     encendido = true;
@@ -22,4 +35,9 @@ public class Bombillo {
       System.out.println("El bombillo "+color+" esta apagado");
     }
   }
+
+  /**
+  * "METODOS"
+  * Controlan si el bombillo se prende o se apaga mostrando un mesnaje en pantalla.
+  */
 }
