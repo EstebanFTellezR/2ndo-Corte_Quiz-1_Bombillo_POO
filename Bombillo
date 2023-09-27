@@ -1,1 +1,25 @@
+public class Bombillo {
+  boolean encendido;
+  String color = azul;
 
+  class Bombillo(boolean encendido){
+    this.encendido = encendido;
+  }
+
+  void prender () {
+    encendido = true;
+  }
+
+  void apagar (){
+    encendido = false;
+  }
+
+  void estaPrendido () {
+    if (this.encendido) {
+      System.out.println("El bombillo "+color+" esta encendido");
+    }
+    else {
+      System.out.println("El bombillo "+color+" esta apagado");
+    }
+  }
+}
